@@ -40,6 +40,20 @@ const projects = [
     frontend_github: "https://github.com/SaaadMushtaq/skill-sync-frontend.git",
     backend_github: "https://github.com/SaaadMushtaq/skill-sync-backend.git",
   },
+  {
+    num: "02",
+    category: "frontend",
+    title: "Code DNA",
+    description:
+      "This is a code analysis tool built using React.js and Tailwind.css. It allows users to paste their code and see what type of code they write with interactive visualization",
+    stack: [{ name: "React.js" }, { name: "Tailwind.css" }],
+    image: [
+      "/assets/projects/code-dna/code-dna_1.png",
+      "/assets/projects/code-dna/code-dna_2.png",
+    ],
+    live: "https://code-kljky835n-saaadmushtaqs-projects.vercel.app/",
+    frontend_github: "https://github.com/SaaadMushtaq/code-dna.git",
+  },
 ];
 
 const Work = () => {
