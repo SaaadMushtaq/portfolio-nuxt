@@ -56,6 +56,20 @@ const projects = [
     live: "https://code-dna-steel.vercel.app/",
     frontend_github: "https://github.com/SaaadMushtaq/code-dna.git",
   },
+  {
+    num: "03",
+    category: "frontend",
+    title: "Corporate CHAOS",
+    description:
+      "An AI tool fills out a funny HR incident report about your workplace mishap and generates 5 creative excuses each with a survival probability rating, delivery tips, and a believability score to humorously help you turn disasters into potentially savable moments.",
+    stack: [{ name: "React.js" }, { name: "Tailwind.css" }],
+    image: [
+      "/assets/projects/corporate-chaos/corporate-chaos_1.png",
+      "/assets/projects/corporate-chaos/corporate-chaos_2.png",
+    ],
+    live: "https://corporate-chaos-chi.vercel.app/",
+    frontend_github: "https://github.com/SaaadMushtaq/corporate-chaos.git",
+  },
 ];
 
 const Work = () => {

@@ -28,9 +28,9 @@ const services = [
   },
   {
     num: "04",
-    title: "UI/UX Designs",
+    title: "Mobile App Development",
     description:
-      "Creating intuitive, visually appealing user interfaces and experiences that enhance usability and intractivity of users.",
+      "Building high-performance, cross-platform mobile apps with seamless UI/UX integration, offline support, and real-time features for iOS and Android.",
     href: "",
   },
 ];
