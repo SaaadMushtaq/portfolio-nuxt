@@ -44,7 +44,7 @@ const INITIAL_FORM = {
   lastname: "",
   email: "",
   phone: "",
-  service: "",
+  service: "Web Development",
   message: "",
 };
 
