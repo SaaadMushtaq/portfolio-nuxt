@@ -22,19 +22,19 @@ const Stats = () => {
           {stats.map((stat, index) => {
             return (
               <div
-                className="flex-1 gap-4 items-center justify-center xl:justify-start"
+                className="flex-1 gap-4 items-center justify-center xl:justify-start glass card-3d rounded-xl px-6 py-5 cursor-default"
                 key={index}
               >
                 <CountUp
                   end={stat.num}
                   duration={5}
                   delay={2}
-                  className="text-4xl xl:text-6xl font-extrabold"
+                  className="text-4xl xl:text-6xl font-extrabold text-accent drop-shadow-[0_0_12px_rgba(0,255,153,0.4)]"
                 />
                 <p
                   className={`${
                     stat.text.length < 15 ? "max-w-[100px]" : "max-w-[150px]"
-                  } leading-snug text-white/80`}
+                  } leading-snug text-white/70 mt-1`}
                 >
                   {stat.text}
                 </p>

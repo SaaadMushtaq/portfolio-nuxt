@@ -49,8 +49,10 @@ const Contact = () => {
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-[30px]">
           <div className="xl:h-[54%] order-2 xl:order-none">
-            <div className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
-              <h3 className="text-4xl text-accent">Lets work together</h3>
+            <div className="flex flex-col gap-6 p-10 glass rounded-2xl accent-border-hover">
+              <h3 className="text-4xl text-accent drop-shadow-[0_0_12px_rgba(0,255,153,0.35)]">
+                Lets work together
+              </h3>
               <p className="text-white/60">
                 I bring 4+ years of experience to the table, with a proven track
                 record in Web Development, Mobile Application Development, UI/UX
@@ -92,7 +94,7 @@ const Contact = () => {
               {info.map((item, index) => {
                 return (
                   <li key={index} className="flex items-center gap-6">
-                    <div className="w-[52px] h-[52px] xl:w-[72px] xl:h-[72px] bg-[#27272c] text-accent rounded-md flex items-center justify-center">
+                    <div className="w-[52px] h-[52px] xl:w-[72px] xl:h-[72px] glass text-accent rounded-xl flex items-center justify-center shadow-[0_0_20px_rgba(0,255,153,0.1)] hover:shadow-[0_0_30px_rgba(0,255,153,0.25)] transition-shadow duration-300">
                       <div className="text-[28px]">{item.icon}</div>
                     </div>
                     <div className="flex-1">
