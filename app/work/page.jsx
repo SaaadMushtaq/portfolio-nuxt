@@ -45,13 +45,15 @@ const projects = [
     category: "frontend",
     title: "Code DNA",
     description:
-      "This is a code analysis tool built using React.js and Tailwind.css. It allows users to paste their code and see what type of code they write with interactive visualization",
+      "An AI-powered tool that analyzes your code style and either reveals your developer personality as a visual DNA strand or roasts your bad habits with savage pop-culture references.",
     stack: [{ name: "React.js" }, { name: "Tailwind.css" }],
     image: [
       "/assets/projects/code-dna/code-dna_1.png",
       "/assets/projects/code-dna/code-dna_2.png",
+      "/assets/projects/code-dna/code-dna_3.png",
+      "/assets/projects/code-dna/code-dna_4.png",
     ],
-    live: "https://code-kljky835n-saaadmushtaqs-projects.vercel.app/",
+    live: "https://code-dna-steel.vercel.app/",
     frontend_github: "https://github.com/SaaadMushtaq/code-dna.git",
   },
 ];
@@ -62,7 +64,7 @@ const Work = () => {
   const [modal, setModal] = useState({ open: false, project: null, index: 0 });
 
   const handleSlideChange = (swiper) => {
-    setProject(projects[swiper.activeIndex]);
+    setProject(projects[swiper.realIndex]);
     setImageIndex(0);
   };
 
@@ -124,8 +126,11 @@ const Work = () => {
                 </div>
 
                 <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
-                  {project.category} Project
+                  {project.title}
                 </h2>
+                <p className="text-accent capitalize">
+                  {project.category} Project
+                </p>
                 <p>{project.description}</p>
                 <ul className="flex gap-4 flex-wrap">
                   {project.stack.map((item, index) => (
@@ -204,6 +209,7 @@ const Work = () => {
               <Swiper
                 spaceBetween={30}
                 slidesPerView={1}
+                loop={true}
                 className="xl:h-[520px] mb-12"
                 onSlideChange={handleSlideChange}
               >
@@ -273,13 +279,13 @@ const Work = () => {
                           </>
                         )}
                       </div>
-                      <WorkSliderBtns
-                        containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none"
-                        btnStyles="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"
-                      />
                     </SwiperSlide>
                   );
                 })}
+                <WorkSliderBtns
+                  containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none"
+                  btnStyles="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"
+                />
               </Swiper>
             </div>
           </div>
