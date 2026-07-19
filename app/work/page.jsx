@@ -70,6 +70,26 @@ const projects = [
     live: "https://corporate-chaos-chi.vercel.app/",
     frontend_github: "https://github.com/SaaadMushtaq/corporate-chaos.git",
   },
+
+  {
+    num: "04",
+    category: "frontend",
+    title: "Shake n Bake",
+    description:
+      "Interactive landing page for a cocktail bar, featuring a dynamic cocktail shaker animation that responds to user interactions, creating an engaging and immersive experience.",
+    stack: [{ name: "React.js" }, { name: "Tailwind.css" }, { name: "GSAP" }],
+    image: [
+      "/assets/projects/shake-n-bake/shake-n-bake_1.png",
+      "/assets/projects/shake-n-bake/shake-n-bake_2.png",
+      "/assets/projects/shake-n-bake/shake-n-bake_3.png",
+      "/assets/projects/shake-n-bake/shake-n-bake_4.png",
+      "/assets/projects/shake-n-bake/shake-n-bake_5.png",
+      "/assets/projects/shake-n-bake/shake-n-bake_6.png",
+      "/assets/projects/shake-n-bake/shake-n-bake_7.png",
+    ],
+    live: "https://shake-n-bake-ivory.vercel.app/",
+    frontend_github: "https://github.com/SaaadMushtaq/Shake-n-bake.git",
+  },
 ];
 
 const Work = () => {
