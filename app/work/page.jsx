@@ -76,7 +76,7 @@ const projects = [
     category: "frontend",
     title: "Shake n Bake",
     description:
-      "Interactive landing page for a cocktail bar, featuring a dynamic cocktail shaker animation that responds to user interactions, creating an engaging and immersive experience.",
+      "Interactive landing page for a cocktail bar, featuring a dynamic animation that responds to user interactions when they scroll through the page, creating an engaging and immersive experience.",
     stack: [{ name: "React.js" }, { name: "Tailwind.css" }, { name: "GSAP" }],
     image: [
       "/assets/projects/shake-n-bake/shake-n-bake_1.png",
