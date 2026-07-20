@@ -90,6 +90,26 @@ const projects = [
     live: "https://shake-n-bake-ivory.vercel.app/",
     frontend_github: "https://github.com/SaaadMushtaq/Shake-n-bake.git",
   },
+
+  {
+    num: "05",
+    category: "frontend",
+    title: "GTA VI",
+    description:
+      "Interactive landing page clone of the GTA VI website, featuring a dynamic animation that responds to user interactions when they scroll through the page, creating an engaging and immersive experience.",
+    stack: [{ name: "React.js" }, { name: "Tailwind.css" }, { name: "GSAP" }],
+    image: [
+      "/assets/projects/gta-vi-clone/gta-vi-clone-1.png",
+      "/assets/projects/gta-vi-clone/gta-vi-clone-2.png",
+      "/assets/projects/gta-vi-clone/gta-vi-clone-3.png",
+      "/assets/projects/gta-vi-clone/gta-vi-clone-4.png",
+      "/assets/projects/gta-vi-clone/gta-vi-clone-5.png",
+      "/assets/projects/gta-vi-clone/gta-vi-clone-6.png",
+      "/assets/projects/gta-vi-clone/gta-vi-clone-7.png",
+    ],
+    live: "https://gta-vi-landing-clone-beige.vercel.app/",
+    frontend_github: "https://github.com/SaaadMushtaq/gta-vi-landing-clone",
+  },
 ];
 
 const Work = () => {
